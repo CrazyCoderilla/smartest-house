@@ -25,8 +25,8 @@ class RadioTest {
         radio.increaseVolume();
         assertEquals(10, radio.getCurrentVolume());
 
-        radio.increaseVolume();
-        assertEquals(10, radio.getCurrentVolume());
+        radio.setCurrentVolume(100);
+        assertEquals(100, radio.getCurrentVolume());
     }
 
     @Test
@@ -65,4 +65,6 @@ class RadioTest {
         radio.prevStation();
         assertEquals(8, radio.getStationNumber());
     }
+
+
 }
